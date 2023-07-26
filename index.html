@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">  
+ <!-- --------------google-font------------------ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- -------------------------cdn------------------------ -->
+<script>
+    tailwind.config = {
+      theme: {
+        screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+        extend: {
+            screens: {
+        'xs':{ 'min':'400px','max':'640px'},
+        // => @media (min-width: 992px) { ... }
+      },
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+</head>
+<body class="lato">
+    <header class=" container mx-auto px-4 xl:mt-14" >
+        <div class="navbar md:px-14 xl:px-14 py-8 md:bg-[#F85559] rounded-full">
+            <div class="navbar-start xs:w-0 sm:w-0 ">
+                <ul class="flex xs:hidden sm:hidden md:hidden xl:contents">
+                    <li class="mx-4 text-[#FFF] font-normal text-lg"><a href="">All Fruits</a></li>
+                    <li class="mx-4 text-[#FFF] font-normal text-lg"><a href="">Shop</a></li>
+                    <li class="mx-4 text-[#FFF] font-normal text-lg"><a href="">About Us</a></li>
+                    <li class="mx-4 text-[#FFF] font-normal text-lg"><a href="">Home</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center ">
+               <img src="images/logo.png" alt="">
+               <h2 class="text-[#FFF] xs:text-black font-bold text-4xl ml-3">Fruit Burst</h2>
+            </div>
+            <div class="navbar-end xs:hidden sm:hidden md:contents">
+              <input type="text" name="" id="" class="bg-white py-2 pl-4 w-96 sm:w-60 mx-auto rounded-full cursor-pointer" placeholder="Search hereSearch here ">
+              <img src="images/3844432_magnifier_search_zoom_icon.png" class="w-5 sm:-ml-48" alt="">
+            </div>
+          </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    
+</body>
+</html>
